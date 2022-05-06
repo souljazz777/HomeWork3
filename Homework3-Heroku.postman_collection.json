@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "eb4625f1-5a8f-43b8-9b77-b9e3536f8583",
+		"name": "Homework3-Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://glacial-bastion-75778.herokuapp.com/post/find",
+					"protocol": "https",
+					"host": [
+						"glacial-bastion-75778",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"今天要洗澡刷牙10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://glacial-bastion-75778.herokuapp.com/post/post",
+					"protocol": "https",
+					"host": [
+						"glacial-bastion-75778",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://glacial-bastion-75778.herokuapp.com/post/deletes",
+					"protocol": "https",
+					"host": [
+						"glacial-bastion-75778",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"deletes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://glacial-bastion-75778.herokuapp.com/post/delete/627484523c5917f31b303921",
+					"protocol": "https",
+					"host": [
+						"glacial-bastion-75778",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"delete",
+						"627484523c5917f31b303921"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新一筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"今天要刷牙洗澡3333\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://glacial-bastion-75778.herokuapp.com/post/patch/627485373c5917f31b30392b",
+					"protocol": "https",
+					"host": [
+						"glacial-bastion-75778",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"patch",
+						"627485373c5917f31b30392b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
